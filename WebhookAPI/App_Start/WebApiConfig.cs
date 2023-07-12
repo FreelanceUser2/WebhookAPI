@@ -13,7 +13,6 @@ namespace WebhookAPI
 
             // Web API routes
             config.MapHttpAttributeRoutes();
-
             // Add a route for the webhook endpoint
             config.Routes.MapHttpRoute(
                 name: "Values",

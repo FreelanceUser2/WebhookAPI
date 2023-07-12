@@ -13,6 +13,7 @@ namespace WebhookAPI
 
             // Web API routes
             config.MapHttpAttributeRoutes();
+            config.InitializeReceiveGitHubWebHooks();
             // Add a route for the webhook endpoint
             config.Routes.MapHttpRoute(
                 name: "Values",

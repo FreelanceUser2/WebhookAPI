@@ -34,7 +34,7 @@ namespace WebhookAPI.Controllers
             {
                 using (SqlCommand sCmd = sCon.CreateCommand())
                 {
-                    sCmd.CommandType = CommandType.StoredProcedure;
+                    sCmd.CommandType = CommandType.Text;
                     sCmd.CommandText = str;
 
                     sCmd.ExecuteNonQuery();
